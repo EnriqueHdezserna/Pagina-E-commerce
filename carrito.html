@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="/js/carrito.js" defer></script>
+    <link rel="stylesheet" href="/css/style-main.css">
+    <title>Carrito</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="">
+        <header>
+          <h1 class="logo"><i class="bi bi-basket-fill"></i> KikeHs</h1>
+        </header>
+          <nav>
+            <ul class="menu">
+              <li>
+                <a class="boton-menu btn-volver" href="/index.html"
+                  ><i class="bi bi-arrow-return-left"></i> Seguir comprando</a
+                >
+              </li>
+              <li>
+                <a class="boton-menu btn-carrito active " href="/carrito.html"
+                  ><i class="bi bi-cart-fill"></i>Carrito</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <footer>
+            <p class="boton-menu texto-footer">© 2025 KikeHs</p>
+          </footer>
+        
+      </aside>
+      <main>
+        <div id="alert-container"></div>
+        <h2 class="titulo-principal">Carrito</h2>
+        <div class="contenedor-carrito">
+          <p id="carrito-vacio" class="carrito-vacio disabled">Tu carrito esta vació <i class="bi bi-emoji-frown"></i></p>
+          <div id="contenedor-carrito-productos" class="carrito-productos disabled">
+            <!-- Productos creados dinamicamente -->
+          </div>
+          <div id="carrito-acciones"  class="carrito-acciones">
+            <div class="carrito-acciones-izquierda">
+                <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+            </div>
+            <div class="carrito-acciones-derecha">
+                <div class="carrito-acciones-total">
+                    <p>Total:</p>
+                    <p id="total">0</p>
+                </div>
+                <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+            </div>
+
+          </div>
+          <p id="carrito-comprado"  class="carrito-comprado ">Muchas gracias por tu compra. Carrito comprado <i class="bi bi-emoji-smile-fill"></i></p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
